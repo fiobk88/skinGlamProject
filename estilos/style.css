@@ -1,0 +1,474 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+        background-color: rgb(219, 226, 239);
+    }
+
+    body{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    
+    
+    h1{
+        margin: 20px;
+        color:rgb(218, 184, 139);
+    }
+    
+    h2{
+        font-size: 30px;
+    }
+    h3{
+        color: #676767;
+        font-size: medium;
+    }
+
+    
+h4{
+    color: #676767;
+    font-size: small;
+}
+
+
+    
+    .titulo{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .principal{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    
+    
+
+footer {
+    background-color: rgb(228, 233, 190);
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.footerContent{
+    width: 10%;
+    padding: 20px;
+    margin: 20px;
+    display: flex;
+    border-radius: 15px;
+    flex-direction: column;
+
+}
+
+
+        
+    .texto{
+            margin: 20px;
+            text-align: center;
+        }
+        
+    
+    
+     .grilla{
+            display: grid;
+            gap: 20px;
+            grid-template-areas:
+            "header"
+            "texto"
+            "galeria"
+            "footer"
+            ;
+            }
+            
+        .header{
+                grid-area: header;
+            }
+            
+        .texto{
+                grid-area: texto;
+            }
+            
+        .galeria{ 
+            grid-area: galeria;
+            }
+            
+        .footer{
+                grid-area: footer;
+                background-color: rgb(228, 233, 190);
+                
+            }
+
+        
+
+
+/* grid 
+
+
+.grilla{
+display: grid;
+gap: 20px;
+grid-template-areas:
+"header"
+"texto"
+"galeria"
+"footer"
+;
+}
+
+.header{
+    grid-area: header;
+}
+
+.texto{
+    grid-area: texto;
+}
+
+.galeria{ 
+grid-area: galeria;
+}
+
+.footer{
+    grid-area: footer;
+    background-color: rgb(228, 233, 190);
+    
+}
+
+
+
+
+
+/* Index 
+
+.imageContainerIndex{
+    display: grid;
+    gap: 10px;
+    justify-content: center;
+    height: auto;
+    }
+
+    .imageContainerIndex img{
+        max-width: 300px;
+        max-height: auto;
+    }
+    
+
+/* Pagina Marca 
+
+.contenidoMarca{
+    display: grid;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 50px;
+}
+
+.imagenVideo img{
+    max-width: auto;
+    max-height: 300px;
+}
+
+/* Pagina BestSellers 
+
+.productContainer{
+    display: grid;
+    gap: 60px;
+    margin: 30px;
+    justify-content: center;
+}
+
+
+.imagen1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.imagen2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.imagen3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.textoProductos1{
+    display: grid;
+    flex-wrap: wrap;
+
+}
+
+.textoProductos2{
+    display: grid;
+    flex-wrap: wrap;
+
+}
+
+.textoProductos3{
+    display: grid;
+    flex-wrap: wrap;
+
+}
+
+.productContainer h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.productContainer h3{
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.productContainer img{
+    max-width: 250px;
+    max-height: auto;
+}
+
+
+/* Pagina Nosotros 
+
+
+.imageContainer{
+    display: grid;
+    grid-gap: 20px;
+    margin-bottom: 50px;
+   justify-content: center;
+}
+
+.imageContainer img{
+    max-width: 300px;
+    max-height: auto;
+    
+}
+
+/* Página Contacto 
+
+
+.formulario{
+    display: grid;
+    margin-bottom: 50px;
+    }
+    
+
+    
+.formulario{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.formulario1{
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+   
+}
+
+
+
+/* DEVICE DESKTOP 
+
+
+@media (min-width: 500px){
+    .grilla{
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas:
+        "header header"
+        "texto texto"
+        "galeria galeria"
+        "footer footer"
+        ;
+        }
+
+        .navbar{
+            display: flex;
+            justify-content: center;
+        }
+        
+        .navbar li{
+            margin-left: 10px;
+            margin-right: 10px;
+            font-size: 20px;  
+        }
+        
+        .navbar a{
+            color: rgb(243, 233, 221);
+            text-decoration: none;
+        }
+        
+        .footer{
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            grid-template-rows: 100px;
+            padding: 30px;
+            justify-content: space-evenly;
+            text-align: start;
+        }
+
+        /* Pagina Marca 
+
+        .contenidoMarca{
+                grid-template-columns: auto auto;
+                grid-template-rows: auto auto;
+        }
+
+
+        /* Pagina BestSellers 
+
+        .productContainer{
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-template-rows: auto auto; 
+            grid-template-areas: 
+            "imagenProductos1 textoProductos1"
+            "imagenProductos2 textoProductos2"
+            "imagenProductos2 textoProductos2"
+            ;
+            gap: 60px;
+            margin: 50px;
+
+        }
+
+        .imagenProductos1{
+            grid-area: imagenProductos1;
+        }
+        
+        .imagenProductos2{
+            grid-area: imagenProductos2;
+        }
+        .imagenProductos3{
+            grid-area: imagenProductos3;
+        }
+        
+        .textoProductos1{
+            grid-area: textoProductos1;
+        }
+        
+        
+        .textoProductos2{
+            grid-area: textoProductos2;
+        }
+        
+        .textoProductos3{
+            grid-area: textoProductos3;
+        }
+         
+        .imagen1{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+        }
+        
+        .imagen2{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+        }
+        
+        
+        .imagen3{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+        }
+        
+        
+        .textoProductos1{
+            display: grid;
+            flex-wrap: wrap;
+        
+        }
+        
+        .textoProductos2{
+            display: grid;
+            flex-wrap: wrap;
+        
+        }
+        
+        .textoProductos3{
+            display: grid;
+            flex-wrap: wrap;
+        
+        }
+        
+        .productContainer h2 {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .productContainer h3{
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        
+        .productContainer img{
+            max-width: 250px;
+            max-height: auto;
+        }
+
+
+        /* Pagina Nosotros 
+
+        .imageContainer{
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-template-rows: auto;
+            grid-template-areas: 
+            "imageNosotros1 imageNosotros2";
+            grid-gap: 20px;
+            margin-bottom: 50px;
+           justify-content: center;
+        }
+        
+        .imageNosotros1{
+            grid-area: imageNosotros1;
+        }
+        
+        .imageNosotros2{
+            grid-area: imageNosotros2;
+        }
+        
+        /* Página Contacto 
+
+
+        .formulario{
+            display: grid;
+            grid-template-columns: auto;
+            grid-template-rows: auto;
+            margin-bottom: 50px;
+            }
+            
+
+            
+        .formulario{
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+
+        .formulario1{
+            padding: 10px;
+            margin: 10px;
+            display: flex;
+            flex-direction: column;
+        
+        }
+
+}
+
