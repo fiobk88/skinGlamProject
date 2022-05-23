@@ -14,12 +14,9 @@
 </head>
 
 <body>
-    <div class="grilla">
 
         <header class="header">
-
-
-            <nav class="navbar navbar-expand-lg navbar-light celeste">
+            <nav class="navbar navbar-expand-lg navbar-light fixed-top celeste">
                 <div class="container-fluid">
                   <a class="navbar-brand" href="#">SKIN GLAM</a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
@@ -46,86 +43,110 @@
                             <a class="nav-link" href="#">Contacto</a>
                         </li>
                         -->
-
                     </ul>
-
                   </div>
-                  
                 </div>
-
               </nav>
-
-
         </header>
 
-
-        <main class="texto">
-
-
-            <div class="titulo">
-                <h1> SKIN GLAM </h1>
-            </div>
+<!-- MAIN BANNERS-->
 
 
-            <section>
+<section class="banners">
 
-                <p class="principal">BIENVENIDO! Aquí encontrarás los mejores productos de skincare, para todos los
-                    tipos de piel.
-                </p>
+  
+  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./img/banner1_home.webp" class="img-fluid" alt="..." width="100%" height="350px">
+        <div class="container">
+          <div class="carousel-caption text-start mb-2">
+            <h1>SUMMER IS HERE!</h1>
+            <p>We have the best routines for this season</p>
+            <p><a class="btn btn-lg btn-primary" href="#">Buy Here</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./img/banner2_home.webp" class="img-fluid" alt="..." width="100%" height="350px">
 
-            </section>
+        <div class="container">
+          <div class="carousel-caption text-start mb-2">
+            <h1>WE HAVE OFFERS</h1>
+            <p>Skincare routines for everybody</p>
+            <p><a class="btn btn-lg btn-primary" href="#">Discover</a></p>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
 
-        </main>
+ </section>
 
-        <section class="galeria">
 
-            <div class="imageContainerIndex">
+        <!-- MAIN PRODUCTS-->
 
-                <div class="container">
-                    <div class="row">
+        <section class="products">
 
-                      <div class="col">
-                        <figure class="imageIndex1">
-                            <img src="img/imagen_inicio2.jpeg" alt="imagen de crema">
-                        </figure>
-                      </div>
+          <h2 class="text-center">The best products for you</h2>
 
-                      <div class="col">
-                        <figure class="imageIndex2">
-                            <img src="img/imagen_inicio4.jpeg" alt="imagen de crema">
-                        </figure>
-                      </div>
-                      
-                    </div>
-                  </div>
+              <div class="row">
+                <div class="col-lg-4">
+                  <img src="./img/productos/producto_paulas.webp" alt="paulaschoice">
+                  <h2 class="fw-normal">Paula's Choice</h2>
+                  <p>The best exofoliator for you face</p>
+                  <p><a class="btn btn-secondary" href="#">Find out &raquo;</a></p>
+                </div>
+                <div class="col-lg-4">
+                  <img src="./img/productos/producto_supergoop.webp" alt="supergoop">
+                  <h2 class="fw-normal">SuperGoop</h2>
+                  <p>The best sunscreen you can find</p>
+                  <p><a class="btn btn-secondary" href="#">Find out &raquo;</a></p>
+                </div>
+                <div class="col-lg-4">
+                  <img src="./img/productos/producto_paulas.webp" alt="tatcha">
 
-            </div>
-
+                  <h2 class="fw-normal">Tatcha</h2>
+                  <p>The best moisturizer for you face</p>
+                  <p><a class="btn btn-secondary" href="#">Find out &raquo;</a></p>
+                </div>
+              </div>
+          
         </section>
 
-        <footer class="footer">
+    
+ <!-- FOOTER-->
 
+        <footer class="footer">
             <div class="footerContent">
                 <h3>Te ayudamos</h3>
                 <h4>Tiempos de entrega</h4>
                 <h4>Reclamos</h4>
                 <h4>Términos y condiciones</h4>
             </div>
-
             <div class="footerContent">
                 <h3>Nosotros</h3>
                 <h4>Nuestra historia</h4>
                 <h4>Contáctanos</h4>
             </div>
-
             <div class="footerContent">
                 <h3>Redes Sociales</h3>
             </div>
-
-
         </footer>
-
-    </div>
+   
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"

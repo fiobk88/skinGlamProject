@@ -4,6 +4,144 @@
     padding: 0;
 }
 
+
+.navbar{
+    background-color: rgb(219, 226, 239);
+}
+
+
+
+h1{
+    color:black;
+    font-size: 80px;
+}
+
+h2{
+    font-size: 30px;
+}
+h3{
+    color: #676767;
+    font-size: medium;
+}
+
+h4{
+color: #676767;
+font-size: small;
+}
+
+
+    
+.footer{
+        background-color: rgb(228, 233, 190);
+    }
+
+
+
+@media (max-width: 768px) {
+
+    .carousel-item {
+      font-size: 15px;
+      height: fit-content;
+    }
+
+    h1{
+    font-size: 25px;
+    }
+
+    .carousel-caption p{
+        font-size: 15px;
+    }
+
+
+  }
+
+  
+footer {
+    background-color: rgb(228, 233, 190);
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.footerContent{
+    width: 10%;
+    padding: 20px;
+    margin: 20px;
+    display: flex;
+    border-radius: 15px;
+    flex-direction: column;
+
+}
+
+/* MAIN BANNER*/
+
+
+.carousel-item img{
+    max-height: 700px;
+    width: auto;
+    
+}
+
+
+.carousel-caption{
+color: black;
+margin: 30px; 
+font-size: 30px;
+}
+
+
+
+/* BANNERS */ 
+
+.products h2{
+justify-content: center;
+}
+
+.products{
+margin-top: 30px;
+margin-bottom: 30px;
+}
+
+.products .col-lg-4 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.col-lg-4 img{
+    height: 150px;
+    width: auto;
+    
+}
+
+.btn:hover {
+    color: aqua;
+}
+
+
+.carousel-caption {
+    position: absolute;
+    right: 15%;
+    bottom: 1.25rem;
+    left: 15%;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    color: #fff;
+    text-align: center;
+}
+
+
+/* BEST SELLERS */ 
+
+.tittle{
+    margin: 30px;
+    background-color: #F9CEEE;
+   
+}
+
+
+
+/*
+
 .navbar{
         background-color: rgb(219, 226, 239);
     }
@@ -47,22 +185,17 @@ h4{
     
     
 
-footer {
-    background-color: rgb(228, 233, 190);
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-}
 
-.footerContent{
-    width: 10%;
-    padding: 20px;
-    margin: 20px;
-    display: flex;
-    border-radius: 15px;
-    flex-direction: column;
 
-}
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+
+/* grid 
 
 
         
@@ -72,40 +205,8 @@ footer {
         }
         
     
-    
-     .grilla{
-            display: grid;
-            gap: 20px;
-            grid-template-areas:
-            "header"
-            "texto"
-            "galeria"
-            "footer"
-            ;
-            }
-            
-        .header{
-                grid-area: header;
-            }
-            
-        .texto{
-                grid-area: texto;
-            }
-            
-        .galeria{ 
-            grid-area: galeria;
-            }
-            
-        .footer{
-                grid-area: footer;
-                background-color: rgb(228, 233, 190);
-                
-            }
-
         
-
-
-/* grid 
+       
 
 
 .grilla{
@@ -469,6 +570,63 @@ grid-area: galeria;
             flex-direction: column;
         
         }
+
+
+
+de la página d ejeemplo.
+
+ <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+
 
 }
 
