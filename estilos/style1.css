@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background-color: #dbe2ef;
+}
+
+h1 {
+  font-size: 80px;
+  color: black;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  color: #676767;
+  font-size: medium;
+}
+
+h4 {
+  color: #676767;
+  font-size: small;
+}
+
+footer {
+  background-color: #e4e9be;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.footerContent {
+  width: 10%;
+  padding: 20px;
+  margin: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 15px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (max-width: 768px) {
+  .carousel-item {
+    font-size: 15px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  h1 {
+    font-size: 25px;
+  }
+  .carousel-caption p {
+    font-size: 15px;
+  }
+}
+
+/* MAIN BANNER*/
+.carousel-item img {
+  max-height: 700px;
+  width: auto;
+}
+
+.carousel-caption {
+  color: black;
+  margin: 30px;
+  font-size: 30px;
+}
+
+/* BANNERS */
+.products h2 {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.products {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.products .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.col-lg-4 img {
+  height: 150px;
+  width: auto;
+}
+
+.btn:hover {
+  color: aqua;
+}
+
+.carousel-caption {
+  position: absolute;
+  right: 15%;
+  bottom: 1.25rem;
+  left: 15%;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  color: #fff;
+  text-align: center;
+}
+
+/* BEST SELLERS */
+.tittle {
+  margin: 30px;
+  background-color: #F9CEEE;
+}
+/*# sourceMappingURL=style1.css.map */

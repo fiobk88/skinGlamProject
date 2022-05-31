@@ -1,0 +1,57 @@
+
+
+/* MAIN BANNER*/
+
+
+.carousel-item img{
+    max-height: 700px;
+    width: auto;
+    
+}
+
+
+.carousel-caption{
+color: black;
+margin: 30px; 
+font-size: 30px;
+}
+
+
+
+/* BANNERS */ 
+
+.products h2{
+justify-content: center;
+}
+
+.products{
+margin-top: 30px;
+margin-bottom: 30px;
+}
+
+.products .col-lg-4 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.col-lg-4 img{
+    height: 150px;
+    width: auto;
+    
+}
+
+.btn:hover {
+    color: aqua;
+}
+
+
+.carousel-caption {
+    position: absolute;
+    right: 15%;
+    bottom: 1.25rem;
+    left: 15%;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    color: #fff;
+    text-align: center;
+}

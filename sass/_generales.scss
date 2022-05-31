@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
+.navbar{
+    background-color: rgb(219, 226, 239);
+}
+
+
+
+h1 {
+    font-size: 80px;
+    color: $titulo;
+}
+
+h2{
+    font-size: 30px;
+}
+
+h3{
+    color: #676767;
+    font-size: medium;
+}
+
+h4{
+color: #676767;
+font-size: small;
+}
+
+
+footer {
+    background-color: rgb(228, 233, 190);
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.footerContent{
+    width: 10%;
+    padding: 20px;
+    margin: 20px;
+    display: flex;
+    border-radius: 15px;
+    flex-direction: column;
+
+}
+
+
+@media (max-width: 768px) {
+
+    .carousel-item {
+      font-size: 15px;
+      height: fit-content;
+    }
+
+    h1{
+    font-size: 25px;
+    }
+
+    .carousel-caption p{
+        font-size: 15px;
+    }
+
+
+  }
