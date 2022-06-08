@@ -5,32 +5,49 @@
 
 
 
-
-
 .navbar{
     background-color: rgb(219, 226, 239);
 }
 
 
+.fonts{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #676767;
+}
 
-h1 {
-    font-size: 80px;
+/*MAP-GET*/
+
+$tamaño: ( mediano:30px, grande :50px);
+
+
+h1{
+    font-size: map-get($tamaño, grande);
     color: $titulo;
 }
 
+
 h2{
-    font-size: 30px;
+    font-size: map-get($tamaño, mediano )
 }
 
+
+/*EXTEND*/
+
 h3{
-    color: #676767;
+    @extend.fonts;
     font-size: medium;
 }
 
 h4{
-color: #676767;
-font-size: small;
+    @extend.fonts;
+    font-size: small;
 }
+
+h5{
+    @extend.fonts;
+    font-size: small;
+}
+
 
 
 footer {
@@ -40,14 +57,41 @@ footer {
     flex-wrap: wrap;
 }
 
+
+/*MIXIN*/
+
+@mixin pad-mar ($padding, $margin) {
+    padding: $padding; 
+    margin: $margin;
+ }
+ 
+
 .footerContent{
     width: 10%;
-    padding: 20px;
-    margin: 20px;
     display: flex;
     border-radius: 15px;
     flex-direction: column;
+    @include pad-mar (20px, 20px);
+}
 
+.iconos{
+    a{
+        text-decoration: none;
+    }
+}
+
+/*MAP*/
+
+$redes: (
+    facebook: rgb(36, 58, 115),
+    twitter: rgb(140, 192, 222),
+    instagram: rgb(255, 6, 183),
+);
+
+@each $red, $color in $redes {
+    .btn--#{$red}{
+        color: $color;
+    }
 }
 
 
@@ -65,6 +109,18 @@ footer {
     .carousel-caption p{
         font-size: 15px;
     }
+
+
+    .btn {
+     font-size:11px;
+     padding:4px 6px;
+    }
+
+
+    .carousel-caption{
+        margin: 0px;
+    }
+
 
 
   }

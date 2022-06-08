@@ -4,7 +4,7 @@
 
 
 .carousel-item img{
-    max-height: 700px;
+    max-height: auto;
     width: auto;
     
 }
@@ -19,6 +19,13 @@ font-size: 30px;
 
 
 /* BANNERS */ 
+
+$tamaño: ( mediano:30px, grande :80px);
+
+.tittleBanner{
+font-size: map-get($tamaño, grande);
+color: $titulo;
+}
 
 .products h2{
 justify-content: center;
