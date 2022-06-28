@@ -27,6 +27,12 @@ font-size: map-get($tamaño, grande);
 color: $titulo;
 }
 
+.secondTittle{
+    color: rgb(87, 111, 114);
+ 
+
+}
+
 .products h2{
 justify-content: center;
 }
@@ -45,10 +51,6 @@ margin-bottom: 30px;
     height: 150px;
     width: auto;
     
-}
-
-.btn:hover {
-    color: aqua;
 }
 
 

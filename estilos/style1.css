@@ -7,9 +7,26 @@
   background-color: #dbe2ef;
 }
 
+.navbar-light .navbar-brand {
+  color: #22577e;
+}
+
+.nav-item {
+  color: #676767;
+}
+
 .fonts, h3, h4, h5 {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   color: #676767;
+}
+
+.tittle {
+  padding-top: 50px;
+}
+
+.btn {
+  background-color: #f73d93;
+  border-color: #f73d93;
 }
 
 /*MAP-GET*/
@@ -60,9 +77,14 @@ footer {
           flex-direction: column;
   padding: 20px;
   margin: 20px;
+  text-align: left;
 }
 
 .iconos a {
+  text-decoration: none;
+}
+
+.footerContent a {
   text-decoration: none;
 }
 
@@ -81,16 +103,18 @@ footer {
 
 @media (max-width: 768px) {
   .carousel-item {
-    font-size: 15px;
+    font-size: 30px;
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
+    padding-top: 55px;
   }
   h1 {
     font-size: 25px;
   }
   .carousel-caption p {
     font-size: 15px;
+    margin: 5px;
   }
   .btn {
     font-size: 11px;
@@ -119,6 +143,10 @@ footer {
   color: black;
 }
 
+.secondTittle {
+  color: #576f72;
+}
+
 .products h2 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -140,9 +168,6 @@ footer {
   width: auto;
 }
 
-.btn:hover {
-  color: aqua;
-}
 
 .carousel-caption {
   position: absolute;
@@ -167,8 +192,13 @@ footer {
 
 /* MARCAS */
 .containerImagenes img {
-  max-height: 500px;
+  max-height: 400px;
   width: auto;
+}
+
+.imagenMarcas :hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 /* ABOUT US */

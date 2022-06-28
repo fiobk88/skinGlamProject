@@ -3,10 +3,16 @@
     padding: 0;
 }
 
-
-
 .navbar{
     background-color: rgb(219, 226, 239);
+}
+
+.navbar-light .navbar-brand {
+    color: rgb(34, 87, 126);
+}
+
+.nav-item{
+    color: #676767;
 }
 
 
@@ -14,6 +20,21 @@
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: #676767;
 }
+
+
+
+.tittle{
+padding-top: 50px;
+}
+
+
+.btn {
+    background-color: rgb(247, 61, 147);
+    border-color:rgb(247, 61, 147);
+   
+}
+
+
 
 /*MAP-GET*/
 
@@ -72,6 +93,8 @@ footer {
     border-radius: 15px;
     flex-direction: column;
     @include pad-mar (20px, 20px);
+    text-align: left;
+    
 }
 
 .iconos{
@@ -79,6 +102,15 @@ footer {
         text-decoration: none;
     }
 }
+
+
+.footerContent{
+    a{
+        text-decoration: none;
+    }
+}
+
+
 
 /*MAP*/
 
@@ -98,8 +130,9 @@ $redes: (
 @media (max-width: 768px) {
 
     .carousel-item {
-      font-size: 15px;
+      font-size: 30px;
       height: fit-content;
+      padding-top: 55px;
     }
 
     h1{
@@ -108,6 +141,7 @@ $redes: (
 
     .carousel-caption p{
         font-size: 15px;
+        margin: 5px;
     }
 
 
